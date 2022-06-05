@@ -1,0 +1,88 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - var(--ifm-navbar-height));
+  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(38, 88, 137, 0.8) 0%, rgba(13, 41, 98, 0.9) 35%, rgba(24, 2, 85, 0.95) 100%) repeat scroll 0% 0%;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 1.6rem;
+  }
+}
+
+.heroBanner h1 {
+
+}
+
+.buttons {
+  display: flex;
+}
+
+.heroVideo {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - var(--ifm-navbar-height));
+  object-fit: cover;
+}
+
+.slideshowWrapper {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.slide {
+  width: 100%;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.heroContainer {
+  position: relative;
+}
+
+.sliderTime {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sliderWrapper {
+  max-width: var(--ifm-container-width-xl);
+  margin: 12px auto;
+  width: 100%;
+  display: flex;
+}
+
+.slideButton {
+  border-radius: 50%;
+  color: var(--ifm-color-secondary-light);
+  margin-right: 6px;
+}
+
+.wider {
+  padding-bottom: 1px;
+  position: absolute;
+  width: 100%;
+  background-color: #FFF;
+  top: calc(50%);
+}
+
+.expanded {
+  width: 12px;
+}
+
+.widerWrapper {
+  position: relative;
+  width: 2px;
+  margin-right: 8px;
+}
